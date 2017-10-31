@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour {
     //private float varX = 0;
     //private float varY = 0;
     public float speed = 0.5f;
+	float xpos;
+	float zpos;
 
 	// Use this for initialization
 	void Start () {
@@ -26,27 +28,20 @@ public class PlayerMovement : MonoBehaviour {
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            Vector3 position = this.transform.position;
-            position.x--;
-            this.transform.position = position;
+			xpos -= speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            Vector3 position = this.transform.position;
-            position.x++;
-            this.transform.position = position;
+			xpos += speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.UpArrow))
         {
-            Vector3 position = this.transform.position;
-            position.z++;
-            this.transform.position = position;
+			zpos += speed * Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.DownArrow))
         {
-            Vector3 position = this.transform.position;
-            position.z--;
-            this.transform.position = position;
+			zpos -= speed * Time.deltaTime;
         }
+		transform.position = new Vector3 (xpos, transform.position.y, zpos);
     }
 }
