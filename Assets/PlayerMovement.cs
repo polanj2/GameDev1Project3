@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-	public float speed = 0.2f;
+	public float speed = 10f;
 	// Use this for initialization
 	void Start ()
 	{
@@ -23,27 +23,27 @@ public class PlayerMovement : MonoBehaviour
 
     if (Input.GetKey (KeyCode.UpArrow)) {
       Vector3 position = this.transform.position;
-			position.x += Mathf.Cos ((90 - y) * Mathf.PI / 180) * 0.2f;
-			position.z += Mathf.Sin ((90 - y) * Mathf.PI / 180) * 0.2f;
+			position.x += Mathf.Cos ((90 - y) * Mathf.PI / 180) * speed * Time.deltaTime;
+			position.z += Mathf.Sin ((90 - y) * Mathf.PI / 180) * speed * Time.deltaTime;
 			this.transform.position = position;
 		}
 		if (Input.GetKey (KeyCode.DownArrow)) {
       Vector3 position = this.transform.position;
-			position.x -= Mathf.Cos ((90 - y) * Mathf.PI / 180) * 0.2f;
-			position.z -= Mathf.Sin ((90 - y) * Mathf.PI / 180) * 0.2f;
+			position.x -= Mathf.Cos ((90 - y) * Mathf.PI / 180) * speed * Time.deltaTime;
+			position.z -= Mathf.Sin ((90 - y) * Mathf.PI / 180) * speed * Time.deltaTime;
 			this.transform.position = position;
 		}
 
 		if (Input.GetKey (KeyCode.W)) {
 			Vector3 position = this.transform.position;
-			position.x += Mathf.Cos ((90 - y) * Mathf.PI / 180) * 0.2f;
-			position.z += Mathf.Sin ((90 - y) * Mathf.PI / 180) * 0.2f;
+			position.x += Mathf.Cos ((90 - y) * Mathf.PI / 180) * speed * Time.deltaTime;
+			position.z += Mathf.Sin ((90 - y) * Mathf.PI / 180) * speed * Time.deltaTime;
 			this.transform.position = position;
 		}
 		if (Input.GetKey (KeyCode.S)) {
 			Vector3 position = this.transform.position;
-			position.x -= Mathf.Cos ((90 - y) * Mathf.PI / 180) * 0.2f;
-			position.z -= Mathf.Sin ((90 - y) * Mathf.PI / 180) * 0.2f;
+			position.x -= Mathf.Cos ((90 - y) * Mathf.PI / 180) * speed * Time.deltaTime;
+			position.z -= Mathf.Sin ((90 - y) * Mathf.PI / 180) * speed * Time.deltaTime;
 			this.transform.position = position;
 		}
 	}

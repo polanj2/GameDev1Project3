@@ -11,7 +11,7 @@ public class PlayerRotation : MonoBehaviour
 	//		return Vector2.Angle (Vector2.right, diference) * (sign);
 	//	}
 
-	//public float speed = 0.2f;
+	public float speed = 2f;
 
 	void Start ()
 	{
@@ -24,17 +24,17 @@ public class PlayerRotation : MonoBehaviour
 		var y = transform.rotation.eulerAngles.y;
 
 		if (Input.GetKey (KeyCode.LeftArrow)) {
-			transform.rotation = Quaternion.Euler (new Vector3 (0f, (y - 2 + 360) % 360, 0f));
+			transform.rotation = Quaternion.Euler (new Vector3 (0f, (y - speed  * Time.deltaTime + 360) % 360, 0f));
 		}
 		if (Input.GetKey (KeyCode.RightArrow)) {
-			transform.rotation = Quaternion.Euler (new Vector3 (0f, (y + 2) % 360, 0f));
+			transform.rotation = Quaternion.Euler (new Vector3 (0f, (y + speed *Time.deltaTime) % 360, 0f));
 		}
 
 		if (Input.GetKey (KeyCode.A)) {
-			transform.rotation = Quaternion.Euler (new Vector3 (0f, (y - 2 + 360) % 360, 0f));
+			transform.rotation = Quaternion.Euler (new Vector3 (0f, (y - speed  * Time.deltaTime+ 360) % 360, 0f));
 		}
 		if (Input.GetKey (KeyCode.D)) {
-			transform.rotation = Quaternion.Euler (new Vector3 (0f, (y + 2) % 360, 0f));
+			transform.rotation = Quaternion.Euler (new Vector3 (0f, (y + speed * Time.deltaTime) % 360, 0f));
 		}
 	}
 }
