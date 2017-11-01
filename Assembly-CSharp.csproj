@@ -53,6 +53,7 @@
   <ItemGroup>
      <Compile Include="Assets\OSCMaster.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
+     <Compile Include="Assets\PlayerRotation.cs" />
      <Compile Include="Assets\SendData.cs" />
      <None Include="Assets\Standard Assets\OSCsharp-master\License.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
