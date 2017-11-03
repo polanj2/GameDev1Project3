@@ -20,6 +20,13 @@ public class MinimapCreator : MonoBehaviour {
     private float radSq;
     private int radX;
     private int radY;
+    private Color col;
+    private int startTile;
+    public Color home; // = new Color(255, 100, 50);
+    public Color playerColor; // = new Color(0, 200, 150);
+    public Color blank; // = new Color(200, 200, 100);
+    public Color river; // = new Color(50, 100, 255);
+    private float[] noiseValues;
 
 	// Use this for initialization
 	void Start ()
@@ -35,6 +42,16 @@ public class MinimapCreator : MonoBehaviour {
                 tempTile.name = a.ToString() + " - " + b.ToString();
                 tiles.Add(tempTile);
             }
+        }
+
+        // Establish a start tile as a home for the player.
+        startTile = Mathf.RoundToInt(tileNum) * Mathf.RoundToInt(player.transform.localPosition.z * tileNum / mapBounds + tileNum / 2) + Mathf.RoundToInt(player.transform.localPosition.x * tileNum / mapBounds + tileNum / 2);
+        // Debug.Log(startTile.ToString());
+
+        noiseValues = new float[tiles.Count * 3];
+        for (int i = 0; i < tiles.Count * 3; i++)
+        {
+            noiseValues[i] = Random.value;
         }
 	}
 
@@ -73,7 +90,14 @@ public class MinimapCreator : MonoBehaviour {
                         tileIndex = Mathf.RoundToInt(tileNum) * radY + radX;
                         // Debug.Log("TileNum = " + tileNum.ToString() + " & radY = " + radY.ToString() + " & radX = " + radX.ToString());
                         GameObject temp = tiles[tileIndex] as GameObject;
-                        temp.GetComponent<Renderer>().material.color = new Color(0, 0, 0);
+
+                        // Conditional logic for what color it should be goes here. Until then...
+                        if ( tileIndex == startTile )
+                        {
+                            col = home;
+                        }
+                        else { col = blank * new Color(noiseValues[3 * tileIndex]/2, noiseValues[3 * tileIndex + 1]/2, noiseValues[3 * tileIndex + 2]/2); }
+                        temp.GetComponent<Renderer>().material.color = col;
                     }
                 }
             }
@@ -82,6 +106,7 @@ public class MinimapCreator : MonoBehaviour {
         // Now do the center one in a different color
         // Debug.Log(mapPosX.ToString() + mapPosY.ToString());
         tileIndex = Mathf.RoundToInt(tileNum) * mapPosY + mapPosX;
+        // Debug.Log(tileIndex.ToString());
 
         // Check if the player is out of the bounds of the minimap
         // if (tileIndex >= 0 && tileIndex <= tiles.Count)
@@ -90,7 +115,7 @@ public class MinimapCreator : MonoBehaviour {
         {
             // Debug.Log(tiles[tileIndex].ToString());
             GameObject temp = tiles[tileIndex] as GameObject;
-            temp.GetComponent<Renderer>().material.color = new Color(0, 255, 255);
+            temp.GetComponent<Renderer>().material.color = playerColor;
         }
 
     }
