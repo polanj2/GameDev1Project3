@@ -3756,7 +3756,6 @@ GameObject:
   - component: {fileID: 804202185}
   - component: {fileID: 804202188}
   - component: {fileID: 804202187}
-  - component: {fileID: 804202186}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -3777,13 +3776,6 @@ Transform:
   m_Father: {fileID: 1549920770}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!81 &804202186
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 804202184}
-  m_Enabled: 1
 --- !u!124 &804202187
 Behaviour:
   m_ObjectHideFlags: 0
@@ -7464,6 +7456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   master: {fileID: 0}
   monster: {fileID: 0}
+  timer: 0
   footstepTime: 0
 --- !u!1 &1943147979
 GameObject:
@@ -7479,6 +7472,7 @@ GameObject:
   - component: {fileID: 1943147986}
   - component: {fileID: 1943147984}
   - component: {fileID: 1943147987}
+  - component: {fileID: 1943147985}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7561,6 +7555,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 70
+--- !u!114 &1943147985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1943147979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4823728439548644b465d91aa18f140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  master: {fileID: 0}
+  monster: {fileID: 1939190903}
+  footstepTime: 0.75
 --- !u!114 &1943147986
 MonoBehaviour:
   m_ObjectHideFlags: 0

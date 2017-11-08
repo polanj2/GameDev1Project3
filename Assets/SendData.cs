@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,12 +6,13 @@ public class SendData : MonoBehaviour {
 
     public OSCMaster master;
     public GameObject monster;
+    private GameObject myWorld;
     private float timer;
     public float footstepTime;
 
 	// Use this for initialization
 	void Start () {
-        GameObject myWorld = GameObject.Find("World");
+        myWorld = GameObject.Find("World");
         master = (OSCMaster)myWorld.GetComponent<OSCMaster>();
         timer = 0.0f;
     }
@@ -39,5 +40,9 @@ public class SendData : MonoBehaviour {
                 timer = Time.time;
             }
         }
+
+        // Take the time from the world and send it in.
+        master.sendTime(myWorld.GetComponent<WorldOver>().timeGet());
+		// Debug.Log (myWorld.GetComponent<WorldOver> ().timeGet ());
 	}
 }
