@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.10166647, g: 0.13354832, b: 0.19199792, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.4964127, b: 0.5748172, a: 1}
+>>>>>>> origin/PickUp
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -156,8 +160,12 @@ Transform:
   - {fileID: 571890470}
 =======
   - {fileID: 365020017}
+<<<<<<< HEAD
   - {fileID: 1737657983}
 >>>>>>> origin/minimapWork
+=======
+  - {fileID: 635873420}
+>>>>>>> origin/PickUp
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7733,6 +7741,7 @@ Transform:
   m_Children:
   - {fileID: 1260010257}
   m_Father: {fileID: 120121461}
+<<<<<<< HEAD
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1737657984
@@ -7753,6 +7762,68 @@ MonoBehaviour:
   plane: {fileID: 1512145953292008, guid: 55649d41e96027d4dbb3e43770e298a3, type: 2}
   player: {fileID: 1943147979}
 >>>>>>> origin/minimapWork
+=======
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &635873419
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 120121461}
+    m_Modifications:
+    - target: {fileID: 400018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.51
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.08467579
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 16.785355
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 16.785334
+      objectReference: {fileID: 0}
+    - target: {fileID: 400018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 16.785334
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+  m_IsPrefabParent: 0
+--- !u!4 &635873420 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+  m_PrefabInternal: {fileID: 635873419}
+>>>>>>> origin/PickUp
 --- !u!1 &1939190903
 GameObject:
   m_ObjectHideFlags: 0
@@ -7867,7 +7938,11 @@ GameObject:
   - component: {fileID: 1943147980}
   - component: {fileID: 1943147986}
   - component: {fileID: 1943147984}
+<<<<<<< HEAD
   - component: {fileID: 1943147987}
+=======
+  - component: {fileID: 1943147985}
+>>>>>>> origin/PickUp
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7949,6 +8024,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 70
+<<<<<<< HEAD
+=======
+--- !u!143 &1943147985
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1943147979}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
+>>>>>>> origin/PickUp
 --- !u!114 &1943147986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7961,6 +8056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 7
+<<<<<<< HEAD
 --- !u!136 &1943147987
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -7974,3 +8070,5 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> origin/PickUp
