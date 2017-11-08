@@ -96,7 +96,7 @@ public class MinimapCreator : MonoBehaviour {
                         {
                             col = home;
                         }
-                        else { col = blank * new Color(noiseValues[3 * tileIndex]/2, noiseValues[3 * tileIndex + 1]/2, noiseValues[3 * tileIndex + 2]/2); }
+                        else { col = blank * new Color(noiseValues[3 * tileIndex]/2, noiseValues[3 * tileIndex + 1], noiseValues[3 * tileIndex + 2]/2); }
                         temp.GetComponent<Renderer>().material.color = col;
                     }
                 }
