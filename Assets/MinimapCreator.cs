@@ -27,6 +27,8 @@ public class MinimapCreator : MonoBehaviour {
     public Color blank; // = new Color(200, 200, 100);
     public Color river; // = new Color(50, 100, 255);
     private float[] noiseValues;
+    private float x;
+    private float z;
 
 	// Use this for initialization
 	void Start ()
@@ -44,8 +46,12 @@ public class MinimapCreator : MonoBehaviour {
             }
         }
 
+        // Use x and z based on map offset
+        x = player.transform.localPosition.x + mapCenterX;
+        z = player.transform.localPosition.z + mapCenterY;
+
         // Establish a start tile as a home for the player.
-        startTile = Mathf.RoundToInt(tileNum) * Mathf.RoundToInt(player.transform.localPosition.z * tileNum / mapBounds + tileNum / 2) + Mathf.RoundToInt(player.transform.localPosition.x * tileNum / mapBounds + tileNum / 2);
+        startTile = Mathf.RoundToInt(tileNum) * Mathf.RoundToInt(z * tileNum / mapBounds + tileNum / 2) + Mathf.RoundToInt(x * tileNum / mapBounds + tileNum / 2);
         // Debug.Log(startTile.ToString());
 
         noiseValues = new float[tiles.Count * 3];
@@ -58,10 +64,13 @@ public class MinimapCreator : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
+        // Use x and z based on map offset
+        x = player.transform.localPosition.x + mapCenterX;
+        z = player.transform.localPosition.z + mapCenterY;
 
         // Scale position of player to the scale of the map, then round it to the nearest int.
-        mapPosXFloat = player.transform.localPosition.x * tileNum / mapBounds + tileNum / 2;
-        mapPosYFloat = player.transform.localPosition.z * tileNum / mapBounds + tileNum / 2;
+        mapPosXFloat = x * tileNum / mapBounds + tileNum / 2;
+        mapPosYFloat = z * tileNum / mapBounds + tileNum / 2;
 
         mapPosX = Mathf.RoundToInt(mapPosXFloat);
         mapPosY = Mathf.RoundToInt(mapPosYFloat);
