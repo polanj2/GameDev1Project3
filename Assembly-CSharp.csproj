@@ -54,6 +54,7 @@
      <Compile Include="Assets\InitMap.cs" />
      <Compile Include="Assets\ItemInteraction.cs" />
      <Compile Include="Assets\LightIntensity.cs" />
+     <Compile Include="Assets\MinimapCreator.cs" />
      <Compile Include="Assets\OSCMaster.cs" />
      <Compile Include="Assets\PlayerInventory.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />

@@ -225,6 +225,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MinimapCreator.cs" />
     <Compile Include="Assets\OSCMaster.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
     <Compile Include="Assets\SendData.cs" />
