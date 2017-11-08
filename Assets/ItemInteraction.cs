@@ -30,7 +30,7 @@ public class ItemInteraction : MonoBehaviour {
 				Destroy (gameObject);
 			}
 			else if (itemType == "Bed") {
-				
+				(GameObject.Find ("World")).GetComponent<WorldOver> ().dayInc ();
 			}
 			else if (itemType == "Thorn" && player.hasKnife()) {
 				Destroy (gameObject);
