@@ -57,6 +57,7 @@
      <Compile Include="Assets\PlayerMovement.cs" />
      <Compile Include="Assets\PlayerRotation.cs" />
      <Compile Include="Assets\SendData.cs" />
+     <Compile Include="Assets\WorldOver.cs" />
      <None Include="Assets\Standard Assets\OSCsharp-master\License.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
