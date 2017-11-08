@@ -51,9 +51,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\BreakRock.cs" />
+     <Compile Include="Assets\FadeOut.cs" />
+     <Compile Include="Assets\GameOverThings\GameOver.cs" />
      <Compile Include="Assets\InitMap.cs" />
      <Compile Include="Assets\ItemInteraction.cs" />
      <Compile Include="Assets\LightIntensity.cs" />
+     <Compile Include="Assets\MainMenu\LoadScene.cs" />
      <Compile Include="Assets\MinimapCreator.cs" />
      <Compile Include="Assets\NoteSystem (Basic)\Scripts\Note.cs" />
      <Compile Include="Assets\NoteSystem (Basic)\Scripts\PickupNote.cs" />
@@ -62,11 +66,14 @@
      <Compile Include="Assets\PlayerMovement.cs" />
      <Compile Include="Assets\PlayerRotation.cs" />
      <Compile Include="Assets\SendData.cs" />
+     <Compile Include="Assets\Simple Scene Fade Load System\Scripts\Fader.cs" />
+     <Compile Include="Assets\Simple Scene Fade Load System\Scripts\Initiate.cs" />
      <Compile Include="Assets\Tile.cs" />
      <Compile Include="Assets\TileCounter.cs" />
      <Compile Include="Assets\WorldOver.cs" />
      <None Include="Assets\Standard Assets\OSCsharp-master\License.txt" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\Simple Scene Fade Load System\ReadMeFirst.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
