@@ -3,7 +3,6 @@ using System.Collections;
 
 public class LightIntensity : MonoBehaviour
 {
-	Light mainLight;
 	Skybox sky;
 	Material skyMat;
 	float time;
@@ -25,7 +24,6 @@ public class LightIntensity : MonoBehaviour
 			time = (Mathf.Floor (count)) % 24;
 		}
 
-		float dot = .8f;
 		float i = 0.0f;//((maxIntensity - minIntensity) * dot) + minIntensity;
 		//0-6 0.25-0.9
 		//6-18 0.9-1.6
