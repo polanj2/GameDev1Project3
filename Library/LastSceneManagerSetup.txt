@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Movements.unity
+- path: Assets/KalvinTestScene2.unity
   isLoaded: 1
   isActive: 1
