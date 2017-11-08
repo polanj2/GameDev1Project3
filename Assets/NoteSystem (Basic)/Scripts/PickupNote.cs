@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PickupNote : MonoBehaviour
 {
-	//Maximum Distance you Can Pick Up A Book
+	//Maximum Distance
 	public float maxDistance = 2F;	
 	private bool readingNote = false;
 	private string noteText;

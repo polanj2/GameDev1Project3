@@ -225,6 +225,14 @@ Prefab:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 0b05fd87ed5272f429e3b65bd24e248f, type: 2}
+    - target: {fileID: 400000, guid: a19cc8913f143ed4caf96a8a134937bc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -36.54425
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: a19cc8913f143ed4caf96a8a134937bc, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a19cc8913f143ed4caf96a8a134937bc, type: 3}
   m_IsPrefabParent: 0
@@ -448,7 +456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxDistance: 1.5
-  skin: {fileID: 11400000, guid: 77d68fcc06fea3f40853ae3f92acb13a, type: 2}
+  skin: {fileID: 11400000, guid: a0adbc41ab891724fadeb931efd6a5ae, type: 2}
 --- !u!1 &996799267 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100018, guid: 9a0612281b6399f45818955c004397c5, type: 3}
@@ -482,8 +490,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.014393937, y: 0.00067124853, z: 0.022554573}
-  m_Center: {x: -0.000140093, y: 0.00000014434517, z: 0.00009958708}
+  m_Size: {x: 0.014393937, y: 0.1386402, z: 0.022554573}
+  m_Center: {x: -0.00014009296, y: 0.06898463, z: 0.00009958735}
 --- !u!114 &1127220922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -613,7 +621,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1667062998}
   - component: {fileID: 1667062997}
-  - component: {fileID: 1667062999}
   - component: {fileID: 1667062996}
   - component: {fileID: 1667062995}
   m_Layer: 0
@@ -690,17 +697,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1667062999
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1667062994}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3464b2a9b092b9c408182ecb7e5fcb70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1772035286
 Prefab:
   m_ObjectHideFlags: 0
@@ -756,9 +752,34 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7be946a0626af6748b411789d930b3e8, type: 2}
+    - target: {fileID: 9500000, guid: 9a0612281b6399f45818955c004397c5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a0612281b6399f45818955c004397c5, type: 3}
   m_IsPrefabParent: 0
+--- !u!1 &1960184053 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: a19cc8913f143ed4caf96a8a134937bc, type: 3}
+  m_PrefabInternal: {fileID: 118344374}
+--- !u!95 &1960184054 stripped
+Animator:
+  m_PrefabParentObject: {fileID: 9500000, guid: a19cc8913f143ed4caf96a8a134937bc,
+    type: 3}
+  m_PrefabInternal: {fileID: 118344374}
+--- !u!114 &1960184056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1960184053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30afbaf4f345828499162387c15bf4d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rock: {fileID: 1960184054}
 --- !u!1 &2098763267
 GameObject:
   m_ObjectHideFlags: 0
@@ -841,7 +862,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2098763267}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 408, y: 163, z: 0}
+  m_LocalPosition: {x: 396.5, y: 163, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2114016002}
@@ -864,7 +885,7 @@ GameObject:
   - component: {fileID: 2114016004}
   - component: {fileID: 2114016003}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Sticks Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -877,7 +898,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2114016001}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -388, y: 153, z: 0}
+  m_LocalPosition: {x: -376.5, y: 153, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2098763271}
@@ -920,7 +941,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Holder?
+  m_Text: 0/10 Sticks Collected
 --- !u!222 &2114016004
 CanvasRenderer:
   m_ObjectHideFlags: 0
