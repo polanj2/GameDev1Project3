@@ -21,7 +21,7 @@ public class BreakRock : MonoBehaviour
         }
     }
 
-    public void crumble()
+    void crumble()
     {
         rock.Play("New State");
     }
