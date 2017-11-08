@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.50510454, g: 0.5962671, b: 0.69756114, a: 1}
+  m_IndirectSpecularColor: {r: 0.50510514, g: 0.5962682, b: 0.69756246, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -167,6 +167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f02fc5c7f00bdd84b9a85cfec0fc5918, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeSpeed: 0.5
+  sceneName: 
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
 --- !u!1 &248062413
 GameObject:
   m_ObjectHideFlags: 0
@@ -7455,9 +7458,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   master: {fileID: 0}
-  monster: {fileID: 0}
-  timer: 0
-  footstepTime: 0
 --- !u!1 &1943147979
 GameObject:
   m_ObjectHideFlags: 0
@@ -7472,7 +7472,9 @@ GameObject:
   - component: {fileID: 1943147986}
   - component: {fileID: 1943147984}
   - component: {fileID: 1943147987}
+  - component: {fileID: 1943147988}
   - component: {fileID: 1943147985}
+  - component: {fileID: 1943147989}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -7563,12 +7565,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1943147979}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4823728439548644b465d91aa18f140, type: 3}
+  m_Script: {fileID: 11500000, guid: 3bb483eccfcedf64bb9af2b8ef3bebba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  master: {fileID: 0}
-  monster: {fileID: 1939190903}
-  footstepTime: 0.75
+  maxDistance: 2
+  skin: {fileID: 11400000, guid: a0adbc41ab891724fadeb931efd6a5ae, type: 2}
 --- !u!114 &1943147986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7592,6 +7593,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d86f49ccd2a9402ba52491bd3705f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1943147988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1943147979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fc5c7f00bdd84b9a85cfec0fc5918, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeSpeed: 0.5
+  sceneName: World
+  fadeColor: {r: 0, g: 0, b: 0, a: 1}
+--- !u!114 &1943147989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1943147979}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0234c2878f2874f8c25c799bf26e9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stickText: {fileID: 0}
 --- !u!1 &2113540701
 GameObject:
   m_ObjectHideFlags: 0

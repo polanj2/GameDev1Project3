@@ -265,21 +265,25 @@
     <Reference Include="UnityEditor.Purchasing">
       <HintPath>Library\UnityAssemblies\UnityEditor.Purchasing.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook.Unity.Settings">
+      <HintPath>Library\FacebookSDK\Facebook.Unity.Settings.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="GameDev1Project3.csproj">
-      <Project>{636AD8A0-9035-6945-9772-4A3B4158F559}</Project>
-      <Name>GameDev1Project3</Name>
-    </ProjectReference>
     <ProjectReference Include="GameDev1Project3.Plugins.csproj">
       <Project>{56F1DF7A-73EA-E18B-6EEB-117B836741A8}</Project>
       <Name>GameDev1Project3.Plugins</Name>
+    </ProjectReference>
+    <ProjectReference Include="GameDev1Project3.csproj">
+      <Project>{636AD8A0-9035-6945-9772-4A3B4158F559}</Project>
+      <Name>GameDev1Project3</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Simple Scene Fade Load System\ReadMeFirst.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
