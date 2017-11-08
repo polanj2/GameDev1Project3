@@ -7,7 +7,7 @@ public class LightIntensity : MonoBehaviour
 	Material skyMat;
 	float time;
 	float count;
-
+	WorldOver wo;
 
 	void Start ()
 	{
@@ -15,6 +15,7 @@ public class LightIntensity : MonoBehaviour
 		skyMat = RenderSettings.skybox;
 		time = 12.0f;
 		count = 0.0f;
+		wo = gameObject.GetComponentsInParent<WorldOver> () [0];
 	}
 
 	void Update ()
@@ -23,6 +24,12 @@ public class LightIntensity : MonoBehaviour
 			count += 0.25f;
 			time = (Mathf.Floor (count)) % 24;
 		}
+
+//		print ("Time is " + wo.timeGet ());
+
+		time = (((wo.timeGet () % 50) / 50) * 12) % 12 + 6;
+
+
 
 		float i = 0.0f;//((maxIntensity - minIntensity) * dot) + minIntensity;
 		//0-6 0.25-0.9
