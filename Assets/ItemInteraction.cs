@@ -13,7 +13,7 @@ public class ItemInteraction : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown ("space") && Vector3.Distance(player.transform.position, this.transform.position) < 20) {
+		if (Input.GetKeyDown ("space") && Vector3.Distance(player.transform.position, this.transform.position) < 5) {
 			if (itemType == "Stick") {
 				player.stickUp();
 				Destroy (gameObject);

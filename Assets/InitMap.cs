@@ -9,8 +9,13 @@ public class InitMap : MonoBehaviour
 	public GameObject tile3;
 	public GameObject Stick;
 	public GameObject brotiene;
-	public GameObject Knife;
+	public GameObject knife;
+	private GameObject tempKnife;
+	private GameObject tempBro;
 	private GameObject tempTile;
+	private GameObject tempStick;
+	GameObject[,] sticks;
+
 
 	void Start ()
 	{
