@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Fog.unity
+=======
+- path: Assets/KalvinTestScene2.unity
+>>>>>>> kalvin_dev
   isLoaded: 1
   isActive: 1

@@ -19,7 +19,11 @@ MonoBehaviour:
     height: 688
   m_ShowMode: 4
   m_Title: 
+<<<<<<< HEAD
   m_RootView: {fileID: 6}
+=======
+  m_RootView: {fileID: 7}
+>>>>>>> kalvin_dev
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
@@ -30,6 +34,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< HEAD
+=======
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 918
+    y: 0
+    width: 307
+    height: 462
+  m_MinSize: {x: 279, y: 71}
+  m_MaxSize: {x: 4004, y: 4021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+>>>>>>> kalvin_dev
   m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -40,6 +72,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< HEAD
     width: 1280
     height: 638
   m_MinSize: {x: 683, y: 492}
@@ -47,6 +80,15 @@ MonoBehaviour:
   vertical: 0
   controlID: 9
 --- !u!114 &3
+=======
+    width: 1536
+    height: 733
+  m_MinSize: {x: 917, y: 342}
+  m_MaxSize: {x: 22012, y: 10021}
+  vertical: 0
+  controlID: 65
+--- !u!114 &4
+>>>>>>> kalvin_dev
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -88,8 +130,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 238
     height: 367
+=======
+    width: 303
+    height: 462
+>>>>>>> kalvin_dev
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
@@ -115,9 +162,15 @@ MonoBehaviour:
     y: 367
     width: 918
     height: 271
+<<<<<<< HEAD
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 13}
+=======
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 18}
+>>>>>>> kalvin_dev
   m_Panes:
   - {fileID: 18}
   - {fileID: 13}
@@ -205,6 +258,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 918
     height: 638
   m_MinSize: {x: 406, y: 492}
@@ -212,6 +266,15 @@ MonoBehaviour:
   vertical: 1
   controlID: 10
 --- !u!114 &10
+=======
+    width: 1225
+    height: 733
+  m_MinSize: {x: 685, y: 342}
+  m_MaxSize: {x: 12010, y: 8042}
+  vertical: 1
+  controlID: 66
+--- !u!114 &11
+>>>>>>> kalvin_dev
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -229,6 +292,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 918
     height: 367
   m_MinSize: {x: 406, y: 221}
@@ -236,6 +300,15 @@ MonoBehaviour:
   vertical: 0
   controlID: 11
 --- !u!114 &11
+=======
+    width: 1225
+    height: 462
+  m_MinSize: {x: 685, y: 221}
+  m_MaxSize: {x: 12010, y: 4021}
+  vertical: 0
+  controlID: 67
+--- !u!114 &12
+>>>>>>> kalvin_dev
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -336,7 +409,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 662f0000
     m_LastClickedID: 12134
+<<<<<<< HEAD
     m_ExpandedIDs: 000000009a300000b630000006310000
+=======
+    m_ExpandedIDs: 00000000862700003a290000
+>>>>>>> kalvin_dev
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -364,7 +441,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 76}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 000000009a300000b630000006310000
+=======
+    m_ExpandedIDs: 00000000862700003a290000
+>>>>>>> kalvin_dev
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -480,9 +561,15 @@ MonoBehaviour:
     height: 346
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: a02f0000
     m_LastClickedID: 0
     m_ExpandedIDs: ecddffff00000000
+=======
+    m_SelectedIDs: 062b0000
+    m_LastClickedID: 11014
+    m_ExpandedIDs: 6edcffff94f9ffffa6fbffff00000000642a0000
+>>>>>>> kalvin_dev
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -501,7 +588,11 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
   m_ExpandedScenes:
+<<<<<<< HEAD
   - Fog
+=======
+  - KalvinTestScene2
+>>>>>>> kalvin_dev
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -566,9 +657,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.06085198, y: -0.1399775, z: 0.008638013, w: -0.98826885}
   m_Size:
+<<<<<<< HEAD
     m_Target: 11.914158
     speed: 2
     m_Value: 11.914158
+=======
+    m_Target: 7.0206
+    speed: 2
+    m_Value: 7.0206
+>>>>>>> kalvin_dev
   m_Ortho:
     m_Target: 1
     speed: 2
