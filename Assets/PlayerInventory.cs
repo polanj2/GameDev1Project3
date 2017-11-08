@@ -24,7 +24,7 @@ public class PlayerInventory : MonoBehaviour {
     }
 
 	public void stickUp(){
-        if(sticks < 7)
+        if(sticks < 6)
         {
             sticks += 1;
             SticksText();

@@ -27,8 +27,8 @@ public class MinimapCreator : MonoBehaviour {
     public Color blank; // = new Color(200, 200, 100);
     public Color river; // = new Color(50, 100, 255);
     private float[] noiseValues;
-    private float x;
-    private float z;
+    private float x1;
+    private float z1;
 
 	// Use this for initialization
 	void Start ()
@@ -47,11 +47,11 @@ public class MinimapCreator : MonoBehaviour {
         }
 
         // Use x and z based on map offset
-        x = player.transform.localPosition.x + mapCenterX;
-        z = player.transform.localPosition.z + mapCenterY;
+        x1 = player.transform.localPosition.x + mapCenterX;
+        z1 = player.transform.localPosition.z + mapCenterY;
 
         // Establish a start tile as a home for the player.
-        startTile = Mathf.RoundToInt(tileNum) * Mathf.RoundToInt(z * tileNum / mapBounds + tileNum / 2) + Mathf.RoundToInt(x * tileNum / mapBounds + tileNum / 2);
+        startTile = Mathf.RoundToInt(tileNum) * Mathf.RoundToInt(z1 * tileNum / mapBounds + tileNum / 2) + Mathf.RoundToInt(x1 * tileNum / mapBounds + tileNum / 2);
         // Debug.Log(startTile.ToString());
 
         noiseValues = new float[tiles.Count * 3];
@@ -65,12 +65,12 @@ public class MinimapCreator : MonoBehaviour {
     void Update()
     {
         // Use x and z based on map offset
-        x = player.transform.localPosition.x + mapCenterX;
-        z = player.transform.localPosition.z + mapCenterY;
+        x1 = player.transform.localPosition.x + mapCenterX;
+        z1 = player.transform.localPosition.z + mapCenterY;
 
         // Scale position of player to the scale of the map, then round it to the nearest int.
-        mapPosXFloat = x * tileNum / mapBounds + tileNum / 2;
-        mapPosYFloat = z * tileNum / mapBounds + tileNum / 2;
+        mapPosXFloat = x1 * tileNum / mapBounds + tileNum / 2;
+        mapPosYFloat = z1 * tileNum / mapBounds + tileNum / 2;
 
         mapPosX = Mathf.RoundToInt(mapPosXFloat);
         mapPosY = Mathf.RoundToInt(mapPosYFloat);
@@ -104,6 +104,10 @@ public class MinimapCreator : MonoBehaviour {
                         if ( tileIndex == startTile )
                         {
                             col = home;
+                        } // Now check for water
+                        else if ( radX * mapBounds / tileNum > 200)
+                        {
+                            col = river;
                         }
                         else { col = blank * new Color(noiseValues[3 * tileIndex]/2, noiseValues[3 * tileIndex + 1], noiseValues[3 * tileIndex + 2]/2); }
                         temp.GetComponent<Renderer>().material.color = col;

@@ -29,7 +29,7 @@ public class SendData : MonoBehaviour
         // I tried for like a half hour to put my brain through it and I was just too dumb.
 
         // Just send distance from the monster to the player.
-        master.sendDist(Vector3.Distance(monster.transform.position, gameObject.transform.position));
+        // master.sendDist(Vector3.Distance(monster.transform.position, gameObject.transform.position));
 
         // Check if the player should be moving.
         if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.1 || Mathf.Abs(Input.GetAxis("Vertical")) > 0.1)

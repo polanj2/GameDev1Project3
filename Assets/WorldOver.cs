@@ -35,7 +35,7 @@ public class WorldOver : MonoBehaviour
 
 	public void dayInc ()
 	{
-		if (day < 7) {
+		if (day < 5) {
 			day++;
 			time = 0;
 			Initiate.Fade (sceneName, fadeColor, fadeSpeed);

@@ -11,5 +11,8 @@ public class Tile : MonoBehaviour
 			(GameObject.Find ("World")).GetComponent<WorldOver> ().timeInc ();
 			Debug.Log ((GameObject.Find ("World")).GetComponent<WorldOver> ().timeGet ());
 		}
+		if (Type == "R") {
+			Debug.Log ("YOU WIN");
+		}
 	}
 }
