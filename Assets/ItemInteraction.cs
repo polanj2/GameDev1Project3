@@ -30,8 +30,7 @@ public class ItemInteraction : MonoBehaviour {
 				Destroy (gameObject);
 			}
 			else if (itemType == "Bed") {
-				player.broGet();
-				Destroy (gameObject);
+				
 			}
 			else if (itemType == "Thorn" && player.hasKnife()) {
 				Destroy (gameObject);

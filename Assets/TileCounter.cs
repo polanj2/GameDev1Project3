@@ -9,7 +9,7 @@ public class TileCounter : MonoBehaviour
 
 	void Start ()
 	{
-		var pos = GameObject.Find ("Main Camera").transform.position;
+		var pos = GameObject.Find ("Player").transform.position;
 		startX = pos.x;
 		startZ = pos.z;
 		print (startX + " " + startZ);

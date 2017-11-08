@@ -11,7 +11,7 @@ public class LightIntensity : MonoBehaviour
 
 	void Start ()
 	{
-		mainLight = GetComponent<Light> ();
+		//mainLight = GetComponent<Light> ();
 		skyMat = RenderSettings.skybox;
 		time = 12.0f;
 		count = 0.0f;

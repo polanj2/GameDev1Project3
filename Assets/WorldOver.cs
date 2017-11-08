@@ -15,14 +15,18 @@ public class WorldOver : MonoBehaviour {
 	void Update () {
 		
 	}
-	void timeInc(){
+	public void timeInc(){
 		if (time < 50) {
 			time++;
 		}
 	}
-	void dayInc(){
+	public void dayInc(){
 		if (day < 7) {
 			day++;
+			time = 0;
 		}
+	}
+	public int timeGet(){
+		return time;
 	}
 }
