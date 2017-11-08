@@ -1,33 +1,32 @@
 fileFormatVersion: 2
 guid: 9a0612281b6399f45818955c004397c5
-timeCreated: 1509344526
+timeCreated: 1510130305
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
     100000: pCylinder1
     100002: pPyramid1
-    100004: pPyramid10
-    100006: pPyramid2
-    100008: pPyramid3
-    100010: transform5
-    100012: transform6
-    100014: transform7
-    100016: transform8
-    100018: //RootNode
+    100004: pPyramid2
+    100006: pPyramid3
+    100008: //RootNode
     400000: pCylinder1
     400002: pPyramid1
-    400004: pPyramid10
-    400006: pPyramid2
-    400008: pPyramid3
-    400010: transform5
-    400012: transform6
-    400014: transform7
-    400016: transform8
-    400018: //RootNode
-    2300000: pPyramid10
-    3300000: pPyramid10
-    4300000: pPyramid10
+    400004: pPyramid2
+    400006: pPyramid3
+    400008: //RootNode
+    2300000: pCylinder1
+    2300002: pPyramid1
+    2300004: pPyramid2
+    2300006: pPyramid3
+    3300000: pCylinder1
+    3300002: pPyramid1
+    3300004: pPyramid2
+    3300006: pPyramid3
+    4300000: pCylinder1
+    4300002: pPyramid1
+    4300004: pPyramid2
+    4300006: pPyramid3
     9500000: //RootNode
   externalObjects:
   - first:

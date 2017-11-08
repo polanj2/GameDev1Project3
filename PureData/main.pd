@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #N canvas 86 13 1342 767 10;
+=======
+#N canvas 50 0 1445 767 10;
+>>>>>>> kalvin_dev
 #X obj 396 84 netreceive -u -b 6666;
 #X msg 396 33 listen 6666;
 #X msg 410 53 listen 0;
@@ -9,7 +13,11 @@
 -1;
 #X text 346 30 stop;
 #X obj 378 51 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+<<<<<<< HEAD
 -1 -1 6200 1;
+=======
+-1 -1 8400 1;
+>>>>>>> kalvin_dev
 #X floatatom 378 185 5 0 0 0 - - -, f 5;
 #X obj 378 202 / 127;
 #X obj 396 104 oscparse;
@@ -32,8 +40,11 @@
 #X obj 65 178 line 0 10;
 #X obj 406 674 *~ 1;
 #X obj 368 674 *~ 1;
+<<<<<<< HEAD
 #X obj 368 654 *~ 1;
 #X obj 406 654 *~ 1;
+=======
+>>>>>>> kalvin_dev
 #X obj 65 121 < 1000;
 #X obj 574 202 route road;
 #X obj 497 222 route wolf;
@@ -131,7 +142,11 @@ necessary or achievable here. The low slope makes it okay.;
 #X obj 2 2 inlet;
 #X obj 96 283 outlet~;
 #X obj 152 283 outlet~;
+<<<<<<< HEAD
 #X obj 2 40 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
+=======
+#X obj 2 40 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+>>>>>>> kalvin_dev
 ;
 #X obj 2 22 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
@@ -247,7 +262,11 @@ necessary or achievable here. The low slope makes it okay.;
 #X msg 934 44 open 3loop.wav;
 #X obj 627 603 *~ 1;
 #X obj 338 71 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+<<<<<<< HEAD
 -1 -1 5800 1;
+=======
+-1 -1 4100 1;
+>>>>>>> kalvin_dev
 #X floatatom 338 205 5 0 0 0 - - -, f 5;
 #X obj 338 222 / 127;
 #X text 229 68 ambience volume;
@@ -255,6 +274,7 @@ necessary or achievable here. The low slope makes it okay.;
 #X msg 652 526 \$1 200;
 #X obj 652 546 line 0 10;
 #X text 749 448 Potential clipping addressed by secondary line;
+<<<<<<< HEAD
 #N canvas 0 50 528 485 timeVolManager 1;
 #X obj 145 2 inlet;
 #X obj 32 320 outlet;
@@ -310,6 +330,78 @@ necessary or achievable here. The low slope makes it okay.;
 #X obj 318 179 > 16;
 #X obj 353 179 < 18;
 #X connect 0 0 13 0;
+=======
+#N canvas 0 50 693 485 timeVolManager 1;
+#X obj 174 2 inlet;
+#X obj 32 327 outlet;
+#X obj 111 327 outlet;
+#X text 0 327 amb1;
+#X text 79 328 amb2;
+#X floatatom 2 310 5 0 0 0 - - -, f 5;
+#X floatatom 81 310 5 0 0 0 - - -, f 5;
+#X obj 2 290 line 0 10;
+#X msg 2 270 \$1 10000;
+#X obj 81 290 line 0 10;
+#X msg 81 270 \$1 10000;
+#X floatatom 2 253 5 0 0 0 - - -, f 5;
+#X floatatom 81 253 5 0 0 0 - - -, f 5;
+#X floatatom 174 133 5 0 0 0 - - -, f 5;
+#X obj 2 186 > 8;
+#X obj 2 213 +;
+#X obj 2 233 == 2;
+#X obj 30 186 < 16;
+#X obj 81 213 +;
+#X obj 81 233 == 2;
+#X obj 81 186 > 9;
+#X obj 109 186 < 21;
+#X obj 190 327 outlet;
+#X floatatom 160 310 5 0 0 0 - - -, f 5;
+#X obj 160 290 line 0 10;
+#X msg 160 270 \$1 10000;
+#X floatatom 160 253 5 0 0 0 - - -, f 5;
+#X obj 160 213 +;
+#X obj 160 233 == 2;
+#X text 158 328 mus1;
+#X obj 160 186 > 8;
+#X obj 188 186 < 10;
+#X obj 269 327 outlet;
+#X floatatom 239 310 5 0 0 0 - - -, f 5;
+#X obj 239 290 line 0 10;
+#X msg 239 270 \$1 10000;
+#X floatatom 239 253 5 0 0 0 - - -, f 5;
+#X obj 239 213 +;
+#X obj 239 233 == 2;
+#X text 237 328 mus2;
+#X obj 348 327 outlet;
+#X floatatom 318 310 5 0 0 0 - - -, f 5;
+#X obj 318 290 line 0 10;
+#X msg 318 270 \$1 10000;
+#X floatatom 318 253 5 0 0 0 - - -, f 5;
+#X obj 318 213 +;
+#X obj 318 233 == 2;
+#X text 316 328 mus3;
+#X obj 239 186 > 12;
+#X obj 274 186 < 14;
+#X obj 318 186 > 16;
+#X obj 353 186 < 18;
+#X obj 427 327 outlet;
+#X floatatom 397 310 5 0 0 0 - - -, f 5;
+#X obj 397 290 line 0 10;
+#X msg 397 270 \$1 10000;
+#X text 395 328 aaa!;
+#X text 2 133 time converted to 0 - 24;
+#X text 16 2 time taken as 0 to 50+;
+#X text 34 18 0 = 8AM \, 50 = 19h;
+#X floatatom 174 22 5 0 0 0 - - -, f 5;
+#X floatatom 174 59 5 0 0 0 - - -, f 5;
+#X obj 174 39 / 50;
+#X obj 174 76 * 11;
+#X text 76 76 19 - 8 = 11;
+#X floatatom 174 96 5 0 0 0 - - -, f 5;
+#X obj 174 113 + 8;
+#X obj 397 186 >= 19;
+#X connect 0 0 60 0;
+>>>>>>> kalvin_dev
 #X connect 5 0 1 0;
 #X connect 6 0 2 0;
 #X connect 7 0 5 0;
@@ -318,6 +410,7 @@ necessary or achievable here. The low slope makes it okay.;
 #X connect 10 0 9 0;
 #X connect 11 0 8 0;
 #X connect 12 0 10 0;
+<<<<<<< HEAD
 #X connect 13 0 15 0;
 #X connect 13 0 18 0;
 #X connect 13 0 21 0;
@@ -366,19 +459,84 @@ necessary or achievable here. The low slope makes it okay.;
 #X obj 436 320 *~ 1;
 #X obj 472 320 *~ 1;
 #X obj 508 320 *~ 1;
+=======
+#X connect 13 0 14 0;
+#X connect 13 0 17 0;
+#X connect 13 0 20 0;
+#X connect 13 0 21 0;
+#X connect 13 0 30 0;
+#X connect 13 0 31 0;
+#X connect 13 0 48 0;
+#X connect 13 0 49 0;
+#X connect 13 0 50 0;
+#X connect 13 0 51 0;
+#X connect 13 0 67 0;
+#X connect 14 0 15 0;
+#X connect 15 0 16 0;
+#X connect 16 0 11 0;
+#X connect 17 0 15 1;
+#X connect 18 0 19 0;
+#X connect 19 0 12 0;
+#X connect 20 0 18 0;
+#X connect 21 0 18 1;
+#X connect 23 0 22 0;
+#X connect 24 0 23 0;
+#X connect 25 0 24 0;
+#X connect 26 0 25 0;
+#X connect 27 0 28 0;
+#X connect 28 0 26 0;
+#X connect 30 0 27 0;
+#X connect 31 0 27 1;
+#X connect 33 0 32 0;
+#X connect 34 0 33 0;
+#X connect 35 0 34 0;
+#X connect 36 0 35 0;
+#X connect 37 0 38 0;
+#X connect 38 0 36 0;
+#X connect 41 0 40 0;
+#X connect 42 0 41 0;
+#X connect 43 0 42 0;
+#X connect 44 0 43 0;
+#X connect 45 0 46 0;
+#X connect 46 0 44 0;
+#X connect 48 0 37 0;
+#X connect 49 0 37 1;
+#X connect 50 0 45 0;
+#X connect 51 0 45 1;
+#X connect 53 0 52 0;
+#X connect 54 0 53 0;
+#X connect 55 0 54 0;
+#X connect 60 0 62 0;
+#X connect 61 0 63 0;
+#X connect 62 0 61 0;
+#X connect 63 0 65 0;
+#X connect 65 0 66 0;
+#X connect 66 0 13 0;
+#X connect 67 0 55 0;
+#X restore 360 300 pd timeVolManager;
+>>>>>>> kalvin_dev
 #X obj 1120 44 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 1091 64 start;
 #X obj 298 91 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+<<<<<<< HEAD
 -1 -1 8400 1;
+=======
+-1 -1 7400 1;
+>>>>>>> kalvin_dev
 #X floatatom 298 225 5 0 0 0 - - -, f 5;
 #X obj 298 242 / 127;
 #X text 210 89 music volume;
 #X obj 435 461 *~ 1;
+<<<<<<< HEAD
 #X obj 443 340 *~ 1;
 #X obj 442 481 *~ 1;
 #X obj 1138 64 readsf~ 2;
 #X obj 515 340 *~ 1;
+=======
+#X obj 442 481 *~ 1;
+#X obj 1138 64 readsf~ 2;
+>>>>>>> kalvin_dev
 #X obj 1120 104 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 1091 124 start;
@@ -386,15 +544,24 @@ necessary or achievable here. The low slope makes it okay.;
 #X obj 1120 170 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X msg 1091 190 start;
+<<<<<<< HEAD
 #X msg 1138 170 open CoolEvening.wav;
+=======
+>>>>>>> kalvin_dev
 #X obj 1138 190 readsf~ 2;
 #X obj 1043 170 delay 1000;
 #X obj 1043 104 delay 1000;
 #X obj 1043 44 delay 1000;
+<<<<<<< HEAD
 #X obj 479 340 *~ 1;
 #X text 283 49 master volume;
 #X obj 258 111 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
 -1 -1 12000 1;
+=======
+#X text 283 49 master volume;
+#X obj 258 111 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 9800 1;
+>>>>>>> kalvin_dev
 #X floatatom 258 245 5 0 0 0 - - -, f 5;
 #X text 149 109 footstep volume;
 #X obj 487 537 *~ 1;
@@ -402,6 +569,35 @@ necessary or achievable here. The low slope makes it okay.;
 #X obj 258 262 / 64;
 #X msg 1138 44 open CoolMorning.wav;
 #X msg 1138 104 open CoolNoon.wav;
+<<<<<<< HEAD
+=======
+#X msg 1138 170 open CoolEvening.wav;
+#X msg 1255 219 start;
+#X obj 1302 219 readsf~;
+#X msg 1302 199 open Creepy.wav;
+#X msg 1255 280 start;
+#X obj 1302 280 readsf~;
+#X msg 1302 260 open Creepy.wav;
+#X obj 1144 227 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 1077 226 init loop;
+#X obj 1302 181 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1302 242 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 1144 245 delay 1000;
+#X obj 335 329 *~ 0;
+#X obj 370 329 *~ 0;
+#X obj 405 329 *~ 0;
+#X obj 412 349 *~ 0;
+#X obj 439 329 *~ 0;
+#X obj 446 349 *~ 0;
+#X obj 473 329 *~ 0;
+#X obj 480 349 *~ 0;
+#X obj 509 329 *~ 0;
+#X obj 406 654 *~ 0;
+#X obj 368 654 *~ 0;
+>>>>>>> kalvin_dev
 #X connect 0 0 10 0;
 #X connect 0 0 20 0;
 #X connect 1 0 0 0;
@@ -409,6 +605,7 @@ necessary or achievable here. The low slope makes it okay.;
 #X connect 3 0 5 0;
 #X connect 4 0 2 0;
 #X connect 4 0 16 0;
+<<<<<<< HEAD
 #X connect 4 0 34 0;
 #X connect 5 0 1 0;
 #X connect 5 0 23 0;
@@ -422,10 +619,26 @@ necessary or achievable here. The low slope makes it okay.;
 #X connect 8 0 9 0;
 #X connect 9 0 28 1;
 #X connect 9 0 29 1;
+=======
+#X connect 4 0 32 0;
+#X connect 5 0 1 0;
+#X connect 5 0 23 0;
+#X connect 5 0 46 0;
+#X connect 5 0 51 0;
+#X connect 5 0 61 0;
+#X connect 5 0 97 0;
+#X connect 5 0 98 0;
+#X connect 5 0 99 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 9 0 120 1;
+#X connect 9 0 121 1;
+>>>>>>> kalvin_dev
 #X connect 10 0 11 0;
 #X connect 11 0 12 0;
 #X connect 11 0 13 0;
 #X connect 11 0 18 0;
+<<<<<<< HEAD
 #X connect 13 0 31 0;
 #X connect 13 0 32 0;
 #X connect 13 0 49 0;
@@ -436,10 +649,24 @@ necessary or achievable here. The low slope makes it okay.;
 #X connect 20 0 21 0;
 #X connect 21 0 22 0;
 #X connect 22 0 30 0;
+=======
+#X connect 12 0 71 0;
+#X connect 13 0 29 0;
+#X connect 13 0 30 0;
+#X connect 13 0 47 0;
+#X connect 14 0 21 1;
+#X connect 16 0 23 0;
+#X connect 18 0 33 0;
+#X connect 18 0 49 0;
+#X connect 20 0 21 0;
+#X connect 21 0 22 0;
+#X connect 22 0 28 0;
+>>>>>>> kalvin_dev
 #X connect 23 0 14 0;
 #X connect 24 0 25 0;
 #X connect 25 0 27 1;
 #X connect 25 0 26 1;
+<<<<<<< HEAD
 #X connect 25 0 45 0;
 #X connect 26 0 19 1;
 #X connect 27 0 19 0;
@@ -537,3 +764,120 @@ necessary or achievable here. The low slope makes it okay.;
 #X connect 108 0 88 0;
 #X connect 109 0 90 0;
 #X connect 109 0 92 0;
+=======
+#X connect 25 0 43 0;
+#X connect 26 0 19 1;
+#X connect 27 0 19 0;
+#X connect 28 0 38 0;
+#X connect 30 0 48 0;
+#X connect 31 0 34 1;
+#X connect 32 0 46 0;
+#X connect 33 0 34 0;
+#X connect 33 0 55 0;
+#X connect 34 0 35 0;
+#X connect 35 0 40 0;
+#X connect 36 0 56 0;
+#X connect 37 0 57 0;
+#X connect 38 0 24 0;
+#X connect 39 0 68 0;
+#X connect 40 0 36 0;
+#X connect 46 0 31 0;
+#X connect 49 0 95 0;
+#X connect 49 1 94 0;
+#X connect 50 0 111 0;
+#X connect 50 1 51 0;
+#X connect 51 0 50 0;
+#X connect 51 0 52 0;
+#X connect 52 0 54 0;
+#X connect 53 0 62 0;
+#X connect 54 0 50 0;
+#X connect 55 0 57 0;
+#X connect 56 0 37 0;
+#X connect 57 0 39 0;
+#X connect 58 0 112 0;
+#X connect 58 1 61 0;
+#X connect 59 0 60 0;
+#X connect 60 0 58 0;
+#X connect 61 0 58 0;
+#X connect 61 0 59 0;
+#X connect 62 0 120 0;
+#X connect 62 0 121 0;
+#X connect 63 0 64 0;
+#X connect 64 0 65 0;
+#X connect 65 0 62 1;
+#X connect 67 0 53 1;
+#X connect 68 0 69 0;
+#X connect 69 0 67 0;
+#X connect 71 0 111 1;
+#X connect 71 1 112 1;
+#X connect 71 2 113 1;
+#X connect 71 2 114 1;
+#X connect 71 3 115 1;
+#X connect 71 3 116 1;
+#X connect 71 4 117 1;
+#X connect 71 4 118 1;
+#X connect 71 5 119 1;
+#X connect 72 0 89 0;
+#X connect 73 0 80 0;
+#X connect 74 0 75 0;
+#X connect 75 0 76 0;
+#X connect 76 0 78 1;
+#X connect 76 0 79 1;
+#X connect 78 0 121 0;
+#X connect 79 0 120 0;
+#X connect 80 0 113 0;
+#X connect 80 1 114 0;
+#X connect 80 2 97 0;
+#X connect 81 0 88 0;
+#X connect 82 0 83 0;
+#X connect 83 0 115 0;
+#X connect 83 1 116 0;
+#X connect 83 2 98 0;
+#X connect 84 0 87 0;
+#X connect 85 0 86 0;
+#X connect 86 0 117 0;
+#X connect 86 1 118 0;
+#X connect 86 2 99 0;
+#X connect 87 0 85 0;
+#X connect 88 0 82 0;
+#X connect 89 0 73 0;
+#X connect 91 0 92 0;
+#X connect 92 0 96 0;
+#X connect 94 0 120 0;
+#X connect 95 0 121 0;
+#X connect 96 0 95 1;
+#X connect 96 0 94 1;
+#X connect 97 0 72 0;
+#X connect 97 0 80 0;
+#X connect 98 0 81 0;
+#X connect 98 0 83 0;
+#X connect 99 0 84 0;
+#X connect 99 0 86 0;
+#X connect 100 0 101 0;
+#X connect 100 0 109 0;
+#X connect 101 0 119 0;
+#X connect 101 1 103 0;
+#X connect 102 0 101 0;
+#X connect 103 0 104 0;
+#X connect 103 0 108 0;
+#X connect 104 0 119 0;
+#X connect 104 1 100 0;
+#X connect 105 0 104 0;
+#X connect 106 0 102 0;
+#X connect 106 0 110 0;
+#X connect 108 0 102 0;
+#X connect 109 0 105 0;
+#X connect 110 0 100 0;
+#X connect 111 0 53 0;
+#X connect 112 0 53 0;
+#X connect 113 0 78 0;
+#X connect 114 0 79 0;
+#X connect 115 0 78 0;
+#X connect 116 0 79 0;
+#X connect 117 0 78 0;
+#X connect 118 0 79 0;
+#X connect 119 0 120 0;
+#X connect 119 0 121 0;
+#X connect 120 0 26 0;
+#X connect 121 0 27 0;
+>>>>>>> kalvin_dev
