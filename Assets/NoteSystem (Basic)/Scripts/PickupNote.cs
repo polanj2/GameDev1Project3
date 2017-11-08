@@ -21,8 +21,8 @@ public class PickupNote : MonoBehaviour
 		//Keep Updating
 		while (true)
         {
-			//If the 'E' was pressed and not reading a note check for a note, else stop reading
-			if (Input.GetKeyDown (KeyCode.E))
+			//If the 'Space' was pressed and not reading a note check for a note, else stop reading
+			if (Input.GetKeyDown ("space"))
             {
                 if (!readingNote)
                 {

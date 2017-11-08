@@ -35,7 +35,7 @@ public class ItemInteraction : MonoBehaviour {
 			else if (itemType == "Thorn" && player.hasKnife()) {
 				Destroy (gameObject);
 			}
-			else if (itemType == "Boulder" && player.hasBro()) {
+			else if (itemType == "Boulder" && player.hasBro()&& player.hasWater()) {
 				Destroy (gameObject);
 			}
 		}

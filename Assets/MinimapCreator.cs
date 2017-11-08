@@ -101,14 +101,9 @@ public class MinimapCreator : MonoBehaviour {
                         GameObject temp = tiles[tileIndex] as GameObject;
 
                         // Conditional logic for what color it should be goes here. Until then...
-                        if ( tileIndex == startTile )
-                        {
-                            col = home;
-                        } // Now check for water
-                        else if ( radX * mapBounds / tileNum > 200)
-                        {
-                            col = river;
-                        }
+						if (tileIndex == startTile) {
+							col = home;
+						}
                         else { col = blank * new Color(noiseValues[3 * tileIndex]/2, noiseValues[3 * tileIndex + 1], noiseValues[3 * tileIndex + 2]/2); }
                         temp.GetComponent<Renderer>().material.color = col;
                     }

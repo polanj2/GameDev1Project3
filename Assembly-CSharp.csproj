@@ -62,6 +62,7 @@
      <Compile Include="Assets\NoteSystem (Basic)\Scripts\Note.cs" />
      <Compile Include="Assets\NoteSystem (Basic)\Scripts\PickupNote.cs" />
      <Compile Include="Assets\OSCMaster.cs" />
+     <Compile Include="Assets\PlaneFade.cs" />
      <Compile Include="Assets\PlayerInventory.cs" />
      <Compile Include="Assets\PlayerMovement.cs" />
      <Compile Include="Assets\PlayerRotation.cs" />

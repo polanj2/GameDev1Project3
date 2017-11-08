@@ -10,11 +10,10 @@ public class InitMap : MonoBehaviour
 	public GameObject Stick;
 	public GameObject brotiene;
 	public GameObject knife;
-	private GameObject tempKnife;
-	private GameObject tempBro;
+	public GameObject tree;
+	private GameObject tempTree;
 	private GameObject tempTile;
-	private GameObject tempStick;
-	GameObject[,] sticks;
+	GameObject[] trees;
 
 
 	void Start ()
@@ -33,8 +32,33 @@ public class InitMap : MonoBehaviour
 					tempTile.name = a.ToString() + " a- " + b.ToString();
 				}
 				tempTile.transform.localPosition = new Vector3(b * 5, 0, a * 5);
-				tiles[a, b] = tempTile;
+				tiles[a, b] = tempTile; 
 			}
+		}
+		trees = new GameObject[100];
+		for (int a = 0; a < 100; a++){
+			tempTree = GameObject.Instantiate (tree, gameObject.transform);
+			tempTree.name = a.ToString() + " - ";
+			tempTree.transform.localPosition = new Vector3(a * 5, 0, 0);
+			trees[a] = tempTile;
+		}
+		for (int a = 0; a < 100; a++){
+			tempTree = GameObject.Instantiate (tree, gameObject.transform);
+			tempTree.name = a.ToString() + " - ";
+			tempTree.transform.localPosition = new Vector3(a * 5, 0, 500);
+			trees[a] = tempTile;
+		}
+		for (int a = 0; a < 100; a++){
+			tempTree = GameObject.Instantiate (tree, gameObject.transform);
+			tempTree.name = a.ToString() + " - ";
+			tempTree.transform.localPosition = new Vector3(500, 0, 5 * a);
+			trees[a] = tempTile;
+		}
+		for (int a = 0; a < 100; a++){
+			tempTree = GameObject.Instantiate (tree, gameObject.transform);
+			tempTree.name = a.ToString() + " - ";
+			tempTree.transform.localPosition = new Vector3(0, 0, 5 * a);
+			trees[a] = tempTile;
 		}
 	}
 

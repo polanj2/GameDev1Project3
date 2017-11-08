@@ -38,7 +38,7 @@ public class WorldOver : MonoBehaviour
 		if (day < 5) {
 			day++;
 			time = 0;
-			Initiate.Fade (sceneName, fadeColor, fadeSpeed);
+			Initiate.Fade ("World", fadeColor, fadeSpeed);
 		} else {
 			Initiate.Fade ("GameOverSlate", fadeColor, fadeSpeed);
 			//SceneManager.LoadScene(scene);
