@@ -7,9 +7,9 @@ public class InitMap : MonoBehaviour
 	public GameObject tile1;
 	public GameObject tile2;
 	public GameObject tile3;
+	public GameObject tile4;
 	public GameObject Stick;
 	public GameObject brotiene;
-	public GameObject knife;
 	public GameObject tree;
 	private GameObject tempTree;
 	private GameObject tempTile;
@@ -26,6 +26,9 @@ public class InitMap : MonoBehaviour
 					tempTile.name = a.ToString() + " b- " + b.ToString();
 				} else if (a < 52 && a > 48 && b < 52 && b > 48) {
 					tempTile = GameObject.Instantiate (tile3, gameObject.transform);
+					tempTile.name = a.ToString() + " c- " + b.ToString();
+				} else if (b > 54 && b < 57 && a <20) {
+					tempTile = GameObject.Instantiate (tile4, gameObject.transform);
 					tempTile.name = a.ToString() + " c- " + b.ToString();
 				} else {
 					tempTile = GameObject.Instantiate (tile1, gameObject.transform);

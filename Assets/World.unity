@@ -1792,9 +1792,9 @@ MonoBehaviour:
   tile1: {fileID: 1448360580583608, guid: 38b22c968dbb3b44d87cc418d79b8dcf, type: 2}
   tile2: {fileID: 1980383732201738, guid: 9b557bc20bf6fa0449c335f98aaad8d4, type: 2}
   tile3: {fileID: 1586432238350738, guid: 130ed68b68416294aab4b89418499a05, type: 2}
+  tile4: {fileID: 1031589263961982, guid: 5618bf1790b1bf041bf44486b4b8359b, type: 2}
   Stick: {fileID: 1137487075350276, guid: fa72891ddacdffb4193565abb8e0d31c, type: 2}
   brotiene: {fileID: 1447753015024186, guid: f44d3822f66aded4f8a2edfb7594c988, type: 2}
-  knife: {fileID: 0}
   tree: {fileID: 1534592035053298, guid: 73377f87e66a2b94da2644889785e243, type: 2}
 --- !u!1001 &120404759
 Prefab:
@@ -22031,6 +22031,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: Boulder
+--- !u!136 &1260077327
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1260077325}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.06
+  m_Height: 0.1
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.04, z: 0}
 --- !u!1 &1264243622
 GameObject:
   m_ObjectHideFlags: 0
