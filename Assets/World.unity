@@ -419,7 +419,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 363978234
+  randomSeed: -455943221
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3839,6 +3839,47 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &846712568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 846712570}
+  - component: {fileID: 846712569}
+  m_Layer: 0
+  m_Name: WaterCol
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &846712569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 846712568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eade62720fa52c4c99c658e1935ee99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemType: Water
+--- !u!4 &846712570
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 846712568}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.74, z: 0}
+  m_LocalScale: {x: 19.29955, y: 71.35398, z: 19.29955}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1549920768
 GameObject:
   m_ObjectHideFlags: 0
@@ -3866,8 +3907,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783ef44c5c26d8e44a26a1e3b46c1de4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tileNum: 30
-  mapBounds: 800
+  tileNum: 100
+  mapBounds: 50
   mapCenterX: 0
   mapCenterY: 0
   plane: {fileID: 1512145953292008, guid: 55649d41e96027d4dbb3e43770e298a3, type: 2}
@@ -4109,7 +4150,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -1573058418
+  randomSeed: -1086203816
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -7556,7 +7597,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1943147979}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 250, y: 1, z: 250}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 248062414}
@@ -7599,7 +7640,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19cb9479877150f48854e6e438e6aa47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 7
+  speed: 4
 --- !u!114 &1943147987
 MonoBehaviour:
   m_ObjectHideFlags: 0
