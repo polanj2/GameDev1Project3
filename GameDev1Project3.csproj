@@ -225,14 +225,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\FadeOut.cs" />
+    <Compile Include="Assets\GameOverThings\GameOver.cs" />
+    <Compile Include="Assets\MainMenu\LoadScene.cs" />
     <Compile Include="Assets\NoteSystem (Basic)\Scripts\Note.cs" />
     <Compile Include="Assets\NoteSystem (Basic)\Scripts\PickupNote.cs" />
     <Compile Include="Assets\OSCMaster.cs" />
     <Compile Include="Assets\PlayerMovement.cs" />
-    <Compile Include="Assets\PlayerRotation.cs" />
     <Compile Include="Assets\SendData.cs" />
+    <Compile Include="Assets\Simple Scene Fade Load System\Scripts\Fader.cs" />
+    <Compile Include="Assets\Simple Scene Fade Load System\Scripts\Initiate.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\Simple Scene Fade Load System\ReadMeFirst.txt" />
     <None Include="Assets\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
     <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

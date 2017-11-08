@@ -4,7 +4,7 @@ using System.Collections;
 public class PickupNote : MonoBehaviour
 {
 	//Maximum Distance you Can Pick Up A Book
-	public float maxDistance = 1.5F;	
+	public float maxDistance = 2F;	
 	private bool readingNote = false;
 	private string noteText;
     //GUI Skin with the Margins, Padding, Align, And Texture
